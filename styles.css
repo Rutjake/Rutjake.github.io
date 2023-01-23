@@ -1,0 +1,107 @@
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: rgb(37, 37, 37);
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+/* Add a black background color to the top navigation */
+.topNav {
+    background-color: #333;
+    overflow: hidden;
+    border-radius: 5px;
+    margin:2.5% ;
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topNav a {
+    float: left;
+    display: block;
+    color: #818181;
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    text-decoration: none;
+    
+  }
+  
+  /* Change the color of links on hover */
+  .topNav a:hover {
+    background-color: rgb(37, 37, 37);
+    color: rgb(211, 147, 8);
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topNav a.active {
+    background-color: rgb(37, 37, 37);
+    color: rgb(211, 147, 8);
+  }
+    
+.title {
+    padding-top: 5vw;
+    font-size: 3vw;
+    text-align: center;
+    color: rgb(211, 147, 8);
+}
+.underText {
+    font-size: 1.5vw;
+    text-align: center;
+    padding-bottom: 5vw;
+}
+
+.mainText {
+    width: 75%;
+    float: left;
+    padding-inline: 15%;
+}
+h3 {
+  color: rgb(211, 147, 8);
+}
+p {
+    font-size:1.5vw;
+    color: #f1f1f1;
+
+}
+hr {
+    color:rgb(211, 147, 8);
+    background-color:rgb(211, 147, 8);
+    width: 95%;
+    height: 4px;
+    border-width:0;
+}
+@media screen and (max-width: 600px) {
+    .mobileDown {
+      display: block;
+      text-align: center;
+      background-color: #333;
+      overflow: hidden;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .mobileDown a {
+      color: #818181;
+      text-decoration: none;
+      font-size: 3vw;
+    }
+    
+    .topNav {
+      display: none;
+    }
+    .inner {
+      display: inline-block;
+      margin:5vw;
+      margin-top: 0.5vw;
+      margin-bottom: 0.5vw;
+  }
+
+  }
+
+  @media screen and (min-width: 600px) {
+  .mobileDown a {
+      float: none;   
+      display: none;
+  }
+}
