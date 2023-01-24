@@ -24,7 +24,7 @@ body {
   float: left;
   display: block;
   color: #818181;
-  font-size: 1.5vw;
+  font-size: 1.5.vw;
   padding: 0.5vw;
   padding-right: 4vw;
   text-decoration: none;
@@ -46,12 +46,12 @@ body {
 }
 .title {
     padding-top: 5vw;
-    font-size: 3vh;
+    
     text-align: center;
     color: rgb(211, 147, 8);
 }
 .underText {
-    font-size: 1.6vh;
+    font-size: 1em;
     text-align: center;
     padding-bottom: 5vw;
 }
@@ -65,7 +65,7 @@ h3 {
   color: rgb(211, 147, 8);
 }
 p {
-    font-size:1.6vh;
+    font-size:1em;
     color: #f1f1f1;
 
 }
@@ -105,16 +105,16 @@ hr {
       margin-bottom: 0.5vw;
   }
   #home {
-    font-size: 4.8vw;
+    font-size: 8vw;
   }
   #user {
-    font-size: 4.8vw;
+    font-size: 8vw;
   }
   #desktop {
-    font-size: 4.8vw;
+    font-size: 8vw;
   }
   #envelope {
-    font-size: 4.8vw;
+    font-size: 8vw;
   }
   }
 
