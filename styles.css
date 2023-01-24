@@ -46,12 +46,12 @@ body {
 }
 .title {
     padding-top: 5vw;
-    font-size: 3vw;
+    font-size: 3vh;
     text-align: center;
     color: rgb(211, 147, 8);
 }
 .underText {
-    font-size: 1.6vw;
+    font-size: 1.6vh;
     text-align: center;
     padding-bottom: 5vw;
 }
@@ -65,7 +65,7 @@ h3 {
   color: rgb(211, 147, 8);
 }
 p {
-    font-size:1.6vw;
+    font-size:1.6vh;
     color: #f1f1f1;
 
 }
@@ -78,9 +78,6 @@ hr {
     
 }
 @media screen and (max-width: 600px) {
-    h1 {
-      font-size: 5vw;
-    }
     .mobileDown {
       display: block;
       text-align: center;
