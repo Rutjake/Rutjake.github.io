@@ -51,7 +51,7 @@ body {
     color: rgb(211, 147, 8);
 }
 .underText {
-    font-size: 1.5vw;
+    font-size: 1.6vw;
     text-align: center;
     padding-bottom: 5vw;
 }
@@ -65,7 +65,7 @@ h3 {
   color: rgb(211, 147, 8);
 }
 p {
-    font-size:1vw;
+    font-size:1.6vw;
     color: #f1f1f1;
 
 }
@@ -78,6 +78,9 @@ hr {
     
 }
 @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 5vw;
+    }
     .mobileDown {
       display: block;
       text-align: center;
@@ -91,7 +94,7 @@ hr {
     .mobileDown a {
       color: #818181;
       text-decoration: none;
-      font-size: 4vw;
+      font-size: 5vw;
     }
     
     .topNav {
