@@ -95,6 +95,7 @@ hr {
       color: #818181;
       text-decoration: none;
       font-size: 5vw;
+      padding-bottom: 0.5vw;
     }
     
     .topNav {
@@ -106,7 +107,7 @@ hr {
       margin-top: 0.5vw;
       margin-bottom: 0.5vw;
   }
-
+ 
   }
 
   @media screen and (min-width: 600px) {
