@@ -94,7 +94,7 @@ hr {
     .mobileDown a {
       color: #818181;
       text-decoration: none;
-      font-size: 5vw;
+      font-size: 3.2vw;
       padding-bottom: 0.5vw;
     }
     
@@ -107,7 +107,18 @@ hr {
       margin-top: 0.5vw;
       margin-bottom: 0.5vw;
   }
- 
+  #home {
+    font-size: 4.8vw;
+  }
+  #user {
+    font-size: 4.8vw;
+  }
+  #desktop {
+    font-size: 4.8vw;
+  }
+  #envelope {
+    font-size: 4.8vw;
+  }
   }
 
   @media screen and (min-width: 600px) {
