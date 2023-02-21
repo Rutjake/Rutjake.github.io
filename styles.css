@@ -39,16 +39,15 @@ body {
 /* Add an active class to highlight the current page */
 .topNav a.active {
   background-color: rgb(37, 37, 37);
-  color: rgb(211, 147, 8);
+  color: rgb(45, 93, 121);
 }
 .inner2 {
   display: inline-block;
 }
 .title {
     padding-top: 5vw;
-    
-    text-align: center;
     color: rgb(45, 93, 121);
+    text-align: center;
 }
 .underText {
     font-size: 1em;
@@ -170,7 +169,8 @@ hr {
   
 }
 .linkedinLinkki {
-  padding-right: 1vw;
+  padding-right: 0.5vw;
   display: inline-block;
+  font-size: large;
   color: rgb(45, 93, 121);
 }
