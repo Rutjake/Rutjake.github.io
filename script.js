@@ -1,20 +1,17 @@
 /* Lisätään teksti kun sivu ladataan */
-
+/* 
 window.onload = function () {
     etusivu();
 };
+*/
 
 /* Lisätään sisältö sivulle */
 
-/* Etusivu */
-function etusivu() {
-    document.getElementById("mainPara").innerHTML = "<p>Osaan kaikkea ja enemmänkin, jos jaksan</p><p>Ju nou</p>";
-}
 
-/* Kuka */
-function kuka() {
+/* Tausta */
+function tausta() {
 
-    tlt = "<h3>Kuka?</h3>";
+    tlt = "<h3>Tausta</h3>";
 
     cont = "<p>Duuniin liittyvä elämänkerta tänne</p>";
 
@@ -49,5 +46,7 @@ function ota_yhteytta() {
     cont = "<p>Minuun saa yhteyden parhaiten Linkedin kautta:<br><br>\
     <a href=https://linkedin.com/in/jarno-seppanen class=linkedinLinkki target=_blank>Linkedin</a> (Linkki aukeaa uuteen välilehteen)</p>";
 
-    document.getElementById("mainPara").innerHTML = tlt + cont;
+    cont2 = "<p>Tai sähköpostitse:<br><br><a href=mailto: class=linkedinLinkki>Lähetä sähköpostia</a>"
+
+    document.getElementById("mainPara").innerHTML = tlt + cont + cont2;
 }

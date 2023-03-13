@@ -77,6 +77,7 @@ hr {
     border-width:0;
     
 }
+
 /* Small Screens */
 @media screen and (max-width: 600px) {
     .mobileDown {
