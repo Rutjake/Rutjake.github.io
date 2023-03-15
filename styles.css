@@ -10,13 +10,12 @@ body {
 /* Add a black background color to the top navigation */
 .topNav {
     background: linear-gradient(to bottom, rgb(5, 34, 51), rgb(9, 58, 87), rgba(5, 34, 51));
-    overflow: hidden;
+    overflow: block;
     border-radius: 5px;
     position: fixed;
     top: 0;
     width: 100%;
     text-align: center;
-    
   }
   
 /* Style the links inside the navigation bar */
@@ -32,7 +31,7 @@ body {
 }
   
 /* Change the color of links on hover */
-.topNav a:hover {
+.topNav a:hover{
   color: rgb(45, 93, 121);
 }
     
@@ -44,6 +43,48 @@ body {
 .inner2 {
   display: inline-block;
 }
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display:inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display:none;
+  position:absolute;
+  background: linear-gradient(to bottom, rgb(5, 34, 51, 0.8), rgb(9, 58, 87), rgba(5, 34, 51));
+  min-width: 115px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 3px;
+  font-size: 1.5.vw;
+  margin-top: 27%;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color:rgb(45, 93, 121);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content{
+  display:block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn{
+  color:rgb(45, 93, 121);
+}
+/* Page Title */
+
 .title {
     padding-top: 5vw;
     color: rgb(45, 93, 121);
@@ -93,6 +134,7 @@ hr {
       bottom: 0;
       width: 100%;
       padding: 0.5vh;
+      overflow: visible;
 
     }
     .mobileDown a {
@@ -120,6 +162,53 @@ hr {
       padding: 0.5vh;
       text-decoration: none;
     }
+    /* Project Boxes */
+
+    .projectBox {
+      margin:auto;
+      padding-left: 1vw;
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 20%;
+      padding-bottom: 1vh;
+    }
+
+    /* Project DropUp */
+    .mobile-dropup {
+      position: relative;
+      display:inline-block;
+    }
+    
+    .mobile-dropup-content {
+      display:none;
+      position: absolute;
+      background: linear-gradient(to bottom, rgb(5, 34, 51, 0.8), rgb(9, 58, 87), rgba(5, 34, 51));
+      min-width: 160px;
+      bottom: 7vh;
+      z-index: 1;
+      border-radius: 3px;
+      font-size: 3.2vw;
+      float: right;
+    }
+    
+    .mobile-dropup-content a {
+      color: rgb(255, 255, 255);
+      padding: 4vw 4vh;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .mobile-dropup-content a:hover {
+      background-color: rgb(5, 34, 51, 0.8);
+    }
+    
+    .mobile-dropup:hover .mobile-dropup-content {
+      display: block;
+    }
+    
+    .mobile-dropup:hover .dropbtn {
+      background-color: #2980B9;
+    }
     
   }
   /* Mobile Icon Size */
@@ -136,29 +225,26 @@ hr {
   font-size: 7.5vw;
 }
 
+/* Big Screens */
   @media screen and (min-width: 600px) {
   .mobileDown a {
       float: none;   
       display: none;
   }
+  .projectBox {
+    margin:auto;
+    padding-left: 1vw;
+    width: 70%;
+    border-radius: 5px;
+    margin-bottom: 4vw;
+    padding-bottom: 1vh;
+  }
+  .projectPageTitle {
+    margin-left: 15%;
+  }
   
 }
 
-/* Project Boxes */
-
-#projectBox {
-  margin:auto;
-  padding-left: 1vw;
-  width: 70%;
-  border-radius: 5px;
-  margin-bottom: 4vw;
-  padding-bottom: 1vh;
-  
-}
-/* Project Box Page Title */
-.boxPageTitle {
-  margin-left: 15%;
-}
 
 /* Responsive Project Image */
 .projectImage {

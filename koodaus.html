@@ -27,14 +27,21 @@
       <div class="inner2">
         <a href="javascript:tausta()"><i class="fa fa-user"></i> Tausta</a>
       </div>
-      <div class="inner2">
-        <a href="koodaus.html"><i class="fa fa-desktop"></i> Projektit</a>
+
+      <div class="inner2 dropdown">
+        <a href="javascript:void(0)" class="dropbtn"><i class="fa fa-desktop"></i> Projektit</a>
+        <div class="dropdown-content">
+          <a href="uxdesign.html">UX Design</a>
+          <a href="koodaus.html">Aplikaatiot</a>
+        </div>
       </div>
+
       <div class="inner2">
         <a href="javascript:ota_yhteytta()"><i class="fa fa-fw fa-envelope"></i> Ota Yhteyttä</a>
       </div>
       <a href="https://linkedin.com/in/jarno-seppanen" target="_blank">Linked <i id="linkedin"
           class="fa-brands fa-linkedin"></i></a>
+
     </div>
   </div>
 
@@ -55,19 +62,19 @@
 
 
     <div id="mainPara" class="mainText">
-      <h3 class="boxPageTitle">Koodaus</h3><br>
+      <h3 class="projectPageTitle">Koodaus</h3><br>
 
       <!-- Video Pokeri -->
-      <div id="projectBox" class="gradie clearfix">
-        <h3 class="boxTitle">Video Pokeri<img src="kuvat/avatar.png" alt="Video Pokeri" class=projectImage></h3>
+      <div class="projectBox gradie clearfix">
+        <h4 class="boxTitle">Video Pokeri<img src="kuvat/avatar.png" alt="Video Pokeri" class=projectImage></h4>
         <p>Video Pokerin esikuvana toimii RAY:n 80 -luvun lopulla kehitetty ensimmäinen video pokerikone. Video Pokeri
           on toteutettu Pythonilla ja siinä on käytetty KivyMd frameworkia.</p>
         <a href=# class="projectLink">lue lisää..</a>
       </div>
 
       <!-- MatikkaPeli -->
-      <div id="projectBox" class="gradie clearfix">
-        <h3 class="boxTitle">MatikkaPeli<img src="kuvat/avatar.png" alt="MatikkaPeli" class=projectImage></h3>
+      <div class="projectBox gradie clearfix">
+        <h4 class="boxTitle">MatikkaPeli<img src="kuvat/avatar.png" alt="MatikkaPeli" class=projectImage></h4>
         <p>MatikkaPeli perustuu koulun kurssi tehtävään, jonka pohjalta kehitin puhelin sovelluksen lapseni pyynnöstä.
           MatikkaPeli on toteutettu myös Pythinilla ja käyttää KivyMd frameworkia.</p>
         <a href=# class="projectLink">lue lisää..</a>
@@ -77,6 +84,8 @@
     <hr class="hrBottom">
 
   </div>
+  </div>
+
   <div id="mobileMenu" class="mobileDown">
     <div class="overlay-content">
       <div class="inner">
@@ -85,9 +94,16 @@
       <div class="inner">
         <a href="javascript:tausta()"><i id="user" class="fa fa-user"></i><br> Tausta</a>
       </div>
-      <div class="inner">
-        <a href="koodaus.html"><i id="desktop" class="fa fa-desktop"></i><br> Projektit</a>
+
+      <div class="inner mobile-dropup">
+        <a href="#"><i id="desktop" class="fa fa-desktop"></i><br> Projektit</a>
+        <div class="mobile-dropup-content">
+          <a href="uxdesign.html">UX Design</a>
+          <a href="koodaus.html">Aplikaatiot</a>
+        </div>
+
       </div>
+
       <div class="inner">
         <a href="javascript:ota_yhteytta()"><i id="envelope" class="fa fa-fw fa-envelope"></i><br> Ota Yhteyttä</a>
       </div>

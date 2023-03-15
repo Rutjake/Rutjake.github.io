@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS file: -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Import Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="topMenu" class="topNav">
+        <div class="overlay-content">
+
+            <div class="inner2">
+                <a href="index.html"><i class="fa fa-fw fa-home"></i> Etusivu</a>
+            </div>
+
+            <div class="inner2">
+                <a href="javascript:tausta()"><i class="fa fa-user"></i> Tausta</a>
+            </div>
+
+            <div class="inner2 dropdown">
+                <a href="javascript:void(0)" class="dropbtn"><i class="fa fa-desktop"></i> Projektit</a>
+                <div class="dropdown-content">
+                    <a href="uxdesign.html">UX Design</a>
+                    <a href="koodaus.html">Aplikaatiot</a>
+                </div>
+            </div>
+
+            <div class="inner2">
+                <a href="javascript:ota_yhteytta()"><i class="fa fa-fw fa-envelope"></i> Ota Yhteyttä</a>
+            </div>
+            <a href="https://linkedin.com/in/jarno-seppanen" target="_blank">Linked <i id="linkedin"
+                    class="fa-brands fa-linkedin"></i></a>
+
+        </div>
+    </div>
+
+    <div>
+        <a href="https://linkedin.com/in/jarno-seppanen" class="mobileLinkedin" target="_blank">Linked <i id="linkedin"
+                class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div>
+        <div>
+            <h1 class="title">JARNO</h1>
+            <P class="underText">UX Designer & Developer</P>
+        </div>
+
+
+
+
+        <hr>
+
+
+        <div id="mainPara" class="mainText">
+            <h3 class="projectPageTitle">UX Design</h3><br>
+
+            <!-- Projekti 1 -->
+            <div class="projectBox gradie clearfix">
+                <h4 class="boxTitle">Projekti 1<img src="kuvat/avatar.png" alt="Project" class=projectImage></h4>
+                <p>Ei vielä projektia...</p>
+                <a href=# class="projectLink">lue lisää..</a>
+            </div>
+
+            <!-- Projekti 2 -->
+            <div class="projectBox gradie clearfix">
+                <h4 class="boxTitle">Projekti 2<img src="kuvat/avatar.png" alt="Project" class=projectImage></h4>
+                <p>Ei vielä projektia...</p>
+                <a href=# class="projectLink">lue lisää..</a>
+            </div>
+        </div>
+
+        <hr class="hrBottom">
+
+    </div>
+    </div>
+
+    <div id="mobileMenu" class="mobileDown">
+        <div class="overlay-content">
+            <div class="inner">
+                <a href="index.html"><i id="home" class="fa fa-fw fa-home"></i><br> Etusivu</a>
+            </div>
+            <div class="inner">
+                <a href="javascript:tausta()"><i id="user" class="fa fa-user"></i><br> Tausta</a>
+            </div>
+
+            <div class="inner mobile-dropup">
+                <a href="#"><i id="desktop" class="fa fa-desktop"></i><br> Projektit</a>
+                <div class="mobile-dropup-content">
+                    <a href="uxdesign.html">UX Design</a>
+                    <a href="koodaus.html">Aplikaatiot</a>
+                </div>
+
+            </div>
+
+            <div class="inner">
+                <a href="javascript:ota_yhteytta()"><i id="envelope" class="fa fa-fw fa-envelope"></i><br> Ota
+                    Yhteyttä</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript file: -->
+    <script src="script.js"></script>
+</body>
+
+</html>
