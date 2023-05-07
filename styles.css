@@ -42,6 +42,8 @@ body {
 /* Add an active class to highlight the current page */
 .topNav a.active {  
   color: rgb(45, 93, 121);
+  cursor: not-allowed;
+  pointer-events: none;
 }
 .inner2 {
   display: inline-block;
@@ -90,14 +92,13 @@ body {
 
 .title {
   padding-top: 5vw;
-  color: rgb(45, 93, 121);
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 .underText {
-  font-size: 1em;
   text-align: center;
   padding-bottom: 5vw;
-  color: rgb(146, 146, 146);
+  color: rgb(168, 168, 168);
 }
 /* Text Content */
 .mainText {
@@ -124,6 +125,17 @@ p {
 
 /* Small Screens */
 @media screen and (max-width: 600px) {
+    .mobileUp {
+      display: block;
+      background: linear-gradient(to bottom, rgb(5, 34, 51, 0.8), rgb(9, 58, 87), rgba(5, 34, 51));
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 0.5vh;
+      overflow: visible;
+
+    }
     .mobileDown {
       display: block;
       text-align: center;
@@ -143,7 +155,7 @@ p {
       padding-bottom: 0.5vw;
     }
     .mobileDown a.active {
-     color: rgb(0, 0, 0)
+     color: rgb(0, 0, 0, 0.6)
     }
     .topNav {
       display: none;
@@ -156,7 +168,6 @@ p {
     }
     /* Mobile version Linkedin Link */
     .mobileLinkedin {
-      position: fixed;
       color: #ffffff;
       font-size: 1.5.vw;
       top: 0;
@@ -294,4 +305,3 @@ p {
   font-size: large;
   color: rgb(45, 93, 121);
 }
-

@@ -8,15 +8,6 @@ window.onload = function () {
 /* Lisätään sisältö sivulle */
 
 
-/* Tausta */
-function tausta() {
-
-    tlt = "<h3>Tausta</h3>";
-
-    cont = "<p>Duuniin liittyvä elämänkerta tänne</p>";
-
-    document.getElementById("mainPara").innerHTML = tlt + cont;
-}
 
 /* Ota yhteyttä */
 function ota_yhteytta() {
