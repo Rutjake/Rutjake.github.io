@@ -6,6 +6,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     margin: 0;
+    padding-bottom: 5%;
   }
   * {
     box-sizing: border-box;
@@ -125,6 +126,9 @@ p {
 
 /* Small Screens */
 @media screen and (max-width: 600px) {
+    body {
+      padding-bottom: 20%;
+    }
     .mobileUp {
       display: block;
       background: linear-gradient(to bottom, rgb(5, 34, 51, 0.8), rgb(9, 58, 87), rgba(5, 34, 51));
