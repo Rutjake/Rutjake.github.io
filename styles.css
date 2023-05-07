@@ -1,6 +1,10 @@
 body {
     font-family: 'Barlow Condensed', sans-serif;
     background-color: rgb(0, 0, 0);
+    background-image: url("kuvat/CodeBack.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     margin: 0;
   }
   * {
@@ -36,8 +40,7 @@ body {
 }
     
 /* Add an active class to highlight the current page */
-.topNav a.active {
-  background-color: rgb(37, 37, 37);
+.topNav a.active {  
   color: rgb(45, 93, 121);
 }
 .inner2 {
@@ -86,22 +89,30 @@ body {
 /* Page Title */
 
 .title {
-    padding-top: 5vw;
-    color: rgb(45, 93, 121);
-    text-align: center;
+  padding-top: 5vw;
+  color: rgb(45, 93, 121);
+  text-align: center;
 }
 .underText {
-    font-size: 1em;
-    text-align: center;
-    padding-bottom: 5vw;
+  font-size: 1em;
+  text-align: center;
+  padding-bottom: 5vw;
   color: rgb(146, 146, 146);
 }
-
+/* Text Content */
 .mainText {
-    width: 100%;
-    float: left;
-    padding-inline: 15%;
+  background-color: rgb(0, 0, 0, 0.75);
+  width: 75%;
+  padding-inline: 10%;
 }
+/* Centering text Div */
+.center {
+  margin: auto;
+  border-style: solid;
+  border-color: rgb(9, 58, 87);
+  border-width: 2px;
+}
+
 h3 {
   color: rgb(45, 93, 121);
 }
@@ -109,18 +120,6 @@ p {
     font-size:1em;
     color: #f1f1f1;
 
-}
-hr {
-    color:rgb(9, 58, 87);
-    background-color:rgb(9, 58, 87);
-    width: 95%;
-    height: 2px;
-    border-width:0;
-    
-}
-.hrBottom {
-  margin-top: 13%;
-  margin-bottom: 20%;
 }
 
 /* Small Screens */
@@ -143,7 +142,9 @@ hr {
       font-size: 3.2vw;
       padding-bottom: 0.5vw;
     }
-    
+    .mobileDown a.active {
+     color: rgb(0, 0, 0)
+    }
     .topNav {
       display: none;
     }
@@ -161,6 +162,10 @@ hr {
       top: 0;
       padding: 0.5vh;
       text-decoration: none;
+    }
+    /* Text Content Box */
+    .mainText {
+      width: 90%;
     }
     /* Project Boxes */
 
@@ -254,7 +259,7 @@ hr {
   padding-right: 5px;
 
 }
-/* Projektien Linkit */
+/* Project Links */
 .projectLink {
   float: right;
   padding-right: 1vw;
@@ -289,3 +294,4 @@ hr {
   font-size: large;
   color: rgb(45, 93, 121);
 }
+
