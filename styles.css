@@ -119,8 +119,8 @@ h3 {
   color: rgb(45, 93, 121);
 }
 p {
-    font-size:1em;
-    color: #f1f1f1;
+  font-size:1em;
+  color: #f1f1f1;
 
 }
 
@@ -309,4 +309,19 @@ p {
   display: inline-block;
   font-size: large;
   color: rgb(45, 93, 121);
+}
+/* Tausta Page Lists */
+li {
+  font-size:1em;
+  color: #f1f1f1;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px; 
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
