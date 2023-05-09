@@ -181,6 +181,7 @@ p {
     /* Text Content Box */
     .mainText {
       width: 90%;
+      padding-inline: 5%;
     }
     /* Project Boxes */
 
