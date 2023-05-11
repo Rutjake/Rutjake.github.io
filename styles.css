@@ -121,7 +121,10 @@ h3 {
 p {
   font-size:1em;
   color: #f1f1f1;
-
+}
+/* Text Links */
+a {
+  color: rgb(70, 134, 172);
 }
 
 /* Small Screens */
@@ -159,7 +162,9 @@ p {
       padding-bottom: 0.5vw;
     }
     .mobileDown a.active {
-     color: rgb(0, 0, 0, 0.6)
+      color: rgba(78, 78, 78);
+      cursor: not-allowed;
+      pointer-events: none;
     }
     .topNav {
       display: none;
@@ -280,7 +285,7 @@ p {
   float: right;
   padding-right: 1vw;
   padding-bottom: 0.5vw;
-  color: rgb(45, 93, 121);
+  color: rgb(70, 134, 172);
 }
 
 /* ClearFix Projekti Boxiin, koska linkki menee muuten yli */
@@ -311,6 +316,9 @@ p {
   color: rgb(45, 93, 121);
 }
 /* Tausta Page Lists */
+ul {
+  padding-left: 1em;
+}
 li {
   font-size:1em;
   color: #f1f1f1;
