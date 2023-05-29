@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS file: -->
+    <link rel="stylesheet" href="\styles.css">
+    <!-- Import Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="topMenu" class="topNav">
+        <div class="overlay-content">
+
+            <div class="inner2">
+                <a href="\index.html"><i class="fa fa-fw fa-home"></i> Etusivu</a>
+            </div>
+
+            <div class="inner2">
+                <a href="\tausta.html"><i class="fa fa-user"></i> Tausta</a>
+            </div>
+
+            <div class="inner2 dropdown">
+                <a href="javascript:void(0)" class="dropbtn active"><i class="fa fa-desktop"></i> Projektit</a>
+                <div class="dropdown-content">
+                    <a href="\uxdesign.html">UX Design</a>
+                    <a href="\koodaus.html">Ohjelmointi</a>
+                </div>
+            </div>
+
+            <div class="inner2">
+                <a href="\otayhteytta.html"><i class="fa fa-fw fa-envelope"></i> Ota Yhteyttä</a>
+            </div>
+            <a href="https://linkedin.com/in/jarno-seppanen" target="_blank">Linked <i id="linkedin"
+                    class="fa-brands fa-linkedin"></i></a>
+
+        </div>
+    </div>
+
+    <div class="mobileUp">
+        <a href="https://linkedin.com/in/jarno-seppanen" class="mobileLinkedin" target="_blank">Linked <i id="linkedin"
+                class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div>
+        <div>
+            <h1 class="title">JARNO</h1>
+            <h3 class="underText">UX Designer & Developer</h3>
+        </div>
+
+
+
+        <div id="mainPara" class="mainText center">
+
+            <h3>Ruokaostosten hintavertailusivusto</h3>
+            <p><Strong>Projektin tausta</Strong></p>
+
+            <p>
+                Tämä idea syntyi sen jälkeen, kun havaitsimme, ettei tällaista palvelua ole ruokaostoksille. Sivusto
+                toimii työkaluna ruokaostosten hintavertailuun eri kauppojen ja ketjujen välillä. Tutkimuksen kohteena
+                oli sivuston hyödyllisyys käyttäjälle sekä sivusto-ominaisuudet. Tulokset auttavat toteuttamaan
+                palvelun, jonka käyttäjät kokevat hyödylliseksi. Henkilökohtaisesti olen kiinnostunut työkalusta, jolla
+                olisi helppo vertailla pääosin ruokatuotteiden hintoja.
+            </p>
+            <p>
+                Ruokaostokset kattavat suuren osan perheellisen kuukausittaisesta budjetista. Tämän takia tutkimuksen
+                kohteena olivat palvelun loppukäyttäjät, jotka ovat perheellisiä ja miettivät perheen ruokatarpeita
+                pidemmäksi ajaksi kerrallaan. Tutkimukseen otettiin mukaan myös perhe, jossa lapset ovat jo aikuisia,
+                tämän tarkoitus oli kartoittaa tuotteen hyödyllisyyttä myös pienemmille talouksille.
+
+            </p>
+            <p><strong>Käyttäjätutkimus</strong></p>
+            <p>
+
+                Haastatteluun valittiin perheellisiä henkilöitä, jotka käyttävät kaupan palveluja viikoittain.
+                Osallistujat ovat perheellisiä, jotka ostavat verrattain suuria määriä ruokaa kuukausittain.
+                Haastatteluun otettiin mukaan myös vanhemman ikäryhmän jäseniä, joilla ei enää ole taloudessa lapsia.
+                Tämän tarkoitus on kartoittaa myös heidän tarpeensa ruokahinta vertailulle. Käyttäjiä haastateltiin
+                selvittääksemme, millaisia ongelmia ja haasteita palveluun liittyy ja varmistaaksemme, että tämän
+                kaltaisesta palvelusta olisi hyötyä ruokakauppojen asiakkaille. Haastattelut toteutettiin käyttäjien
+                kodeissa, jotta se olisi haastateltavalle vaivatonta, eikä näin ollen haastateltavan tarvinnut siirtyä
+                kodistaan muualle.
+            </p>
+            <img src="ruokavertailuKuvat/SummaryEdited.jpg" alt="Yhteenveto" id="summary" class="project_img">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+            <p>
+                (Kuva suurenee klikkaamalla)
+            </p>
+            <p>
+                Haastattelujen jälkeen haastattelut litteroitiin ja analysoitiin temaattisesti.
+                Koska haastattelut nauhoitettiin matkapuhelimella, ne oli helppo litteroida, kuunnella uudelleen
+                tietokoneella ja analysoida sekä kerätä mahdollisten käyttäjien mainitsemia yhtäläisyyksiä.
+            </p>
+            <p><strong>Kuka, mitä ja miksi:</strong></p>
+            <p>
+                Mahdolliset käyttäjät, heidän ongelmansa ja käyttäjätarinat.
+                Käyttäjiä kuvaillaan käyttäjäpersoonalla, jossa on eritelty tavoitteet, turhautumiset ja ongelmat. Myös
+                käyttäjätarinat ovat listattuna alapuolella.
+
+            </p>
+
+            <!-- Users stories -->
+
+
+            <h3>Potentiaalinen käyttäjä 1: Mia</h3>
+            <img src="ruokavertailuKuvat/User_Mia_Persona.jpg" alt="Käyttäjä: Mia" id="mia" class="project_img">
+            <p>
+                (Kuva suurenee klikkaamalla)
+            </p>
+
+            <p><strong>Mian käyttäjätarinat</strong></p>
+            <ol type="1">
+                <li>
+                    Neljän lapsen äitinä haluan löytää ruoan hinnat yhdestä paikasta, jotta minun ei tarvitse käyttää
+                    aikaa hintojen etsimiseen.
+                </li>
+                <li>
+                    Isohkon perheen äitinä haluan löytää edullisimmat hinnat, jotta voin tehdä ostokset
+                    mahdollisimman taloudellisesti.
+                </li>
+                <li>
+                    Isojen ruokaostosten suunnittelijana haluan tietää ostosteni kokonaishinnan, jotta voin valita
+                    kaupan sen perusteella ja saada bonukset yhdestä ketjusta.
+                </li>
+                <li>
+                    Hintatietoisena haluan löytää myös ketjujen omien tuotteiden hinnat, jotta voin vertailla myös
+                    niitä.
+                </li>
+                <li>
+                    Puhelimen tehokäyttäjänä haluan myös käyttää tietokoneen selainta, jotta voin välttyä puhelimeni
+                    muistin täyttymiseltä.
+                </li>
+                <li>
+                    Käyttäjänä haluan listata kaupat, joissa käyn, jotta voin päättää kuinka kaukana olevat kaupat
+                    näkyvät.
+                </li>
+                <li>
+                    Käyttäjänä haluan selata tuotteita kategorian mukaan, jotta palvelua ja tuotteita ei tarvitsisi
+                    selata loputtomiin.
+                </li>
+                <li>
+                    Käyttäjänä haluan tietoa eduista ja tarjouksista, jotta tiedän mitä on tarjolla, milloinkin.
+                </li>
+                <li>
+                    Kaupan asiakkaana haluan tietoa tuotteista, jotta en maksa huonolaatuisista tuotteista.
+                </li>
+            </ol>
+            <h3>Potentiaalinen käyttäjä 2: Eeva</h3>
+            <img src="ruokavertailuKuvat/User_Eeva_Persona.jpg" alt="Käyttäjä: Eeva" id="eeva" class="project_img">
+            <p>
+                (Kuva suurenee klikkaamalla)
+            </p>
+
+            <p><strong>Eevan käyttäjätarinat</strong></p>
+            <ol type="1">
+                <li>
+                    Kaupan asiakkaana haluan löytää hinnat ja tuotteet yhdestä paikasta, jotta minun ei tarvitse etsiä
+                    niitä.
+                </li>
+                <li>
+                    Kaupan asiakkaana haluan tietää hinnat etukäteen, jotta voisin arvioida, paljonko kauppaan kuluu
+                    rahaa.
+                </li>
+                <li>
+                    Kaupan asiakkaana haluan vertailla yhden tuotteen hintoja, jotta löytäisin edullisimman vaihtoehdon.
+                </li>
+                <li>
+                    Käyttäjänä haluan tietoa tarjouksista, jotta voin suunnitella kaupassa käynnin niiden perusteella.
+                </li>
+                <li>
+                    Käyttäjänä haluan tietoa hinnoista myös pienten ostosten osalta, jotta voisin valita edullisimman
+                    kaupan.
+                </li>
+                <li>
+                    Käyttäjänä haluan palvelun puhelin appina, jotta minun ei tarvitse käynnistää tietokonetta sen
+                    takia.
+                </li>
+                <li>
+                    Käyttäjänä haluan palveluun ostoslistan, jotta minun ei tarvitse aina kirjoittaa käsin tuotteita.
+                </li>
+            </ol>
+            <h3>Potentiaalinen käyttäjä 3: Tarja</h3>
+
+            <img src="ruokavertailuKuvat/User_Tarja_Persona.jpg" alt="Käyttäjä: Tarja" id="tarja" class="project_img">
+            <p>
+                (Kuva suurenee klikkaamalla)
+            </p>
+
+            <p><strong>Tarjan käyttäjätarinat</strong></p>
+            <ol type="1">
+                <li>
+                    Kahden lapsen äitinä haluan tietoa hinnoista ennen, kun menen kauppaan, jotta minun ei tarvitse
+                    miettiä kaupassa onko jokin tuote toisaalla edullisempi.
+                </li>
+                <li>
+                    Kahden lapsen äitinä haluan vertailla hintoja etukäteen, jotta kaupassa käynti olisi tehokkaampaa.
+                </li>
+                <li>
+                    Kaupan asiakkaana haluan vertailla hintoja, jotta voin tehdä kauppalistan sen perusteella.
+                </li>
+                <li>
+                    Käyttäjänä haluan, että palvelu toimii useammassa alustassa, jotta voin vertailla hintoja sekä
+                    puhelimella, että tietokoneen selaimella.
+                </li>
+                <li>
+                    Käyttäjänä haluan ajankohtaista tietoa tarjouksista, jotta pysyn ajan tasalla hyvistä tarjouksista.
+                </li>
+            </ol>
+            <h3>Tutkimuksen yhteenveto</h3>
+            <p>
+                Tutkimuksessa havaittiin, että haastateltavat kokevat ruoka hintavertailun hankalaksi sekä aikaa
+                vieväksi. Tällä hetkellä olevat palvelut ovat hajanaisia sekä hankalia ja hitaita käyttää.
+                Haastateltavat kokivat turhauttavaksi sen, että he voivat vertailla ruokaostosten hintaa vasta kaupassa,
+                tai muistelemalla mitä tuote maksoi edellisellä kauppareissulla. Haastateltavista oli myös turhauttavaa
+                se, että hintatietojen etsimiseen ennen kaupassa käyntiä menee paljon aikaa sekä sen, että hintatietoja
+                on vaikea löytää. Isojen ruokaostosten suunnitteleminen taloudellisesta näkökulmasta on haastavaa, koska
+                hintatietoja on vaikea vertailla etukäteen. Haastateltavien mielestä on myös merkittävää, että
+                tuotetarjoukset olisivat ajan tasalla ja helposti löydettävissä. Suuri merkitys haastateltaville on
+                myös, millä alustoilla palvelun tulisi toimia.
+            </p>
+            <p><Strong>Mahdolliset ratkaisut</Strong></p>
+            <p>
+                Käyttäjätarinoiden ja -ongelmien määrittelyn jälkeen ratkaisuja pohdittiin kirjoittamalla mahdolliset
+                ratkaisut ja sitten piirtämällä ne. Luonnokset edustavat erilaisia käyttötapauksia, jotka ratkaisevat
+                käyttäjien ongelmia ja myöhemmin nämä käyttötapaukset muodostaisivat pohjan ruokahinta vertailu
+                palvelulle.
+            </p>
+            <ol type="1">
+                <li>
+                    Käyttäjä tarkistaa tietyn tuotteen hinnan ennen kauppaan lähtöä.
+                </li>
+                <li>
+                    Käyttäjä vertailee hintoja, koska suunnittelee ruokaostokset pidemmälle ajalle.
+                </li>
+                <li>
+                    Käyttäjä valitsee mieleisen kaupan hintavertailun perusteella.
+                </li>
+                <li>
+                    Käyttäjä tarkistaa ajan kohtaiset tarjoukset ennen kauppaan lähtöä, jonka perusteella valitsee
+                    kaupan, jossa tekee ruokaostokset.
+                </li>
+                <li>
+                    Käyttäjä valitsee kaupan sen tuotteen hinnan perusteella mitä tarvitsee suuren määrän.
+                </li>
+            </ol>
+            <h3>Crazy eight</h3>
+            <img src="ruokavertailuKuvat/crazyeight.jpg" alt="Crazy eight" id="crazy" class="project_img">
+            <p>
+                (Kuva suurenee klikkaamalla)
+            </p>
+
+            <p>
+                Crazy eight on nopea luonnosteluharjoitus, joka haastaa suunnittelijan luonnostelemaan kahdeksan
+                erillistä ideaa kahdeksassa minuutissa. Tavoitteena on luoda laaja valikoima ratkaisuja haasteeseen.
+            </p>
+            <p>
+                Projekti oli mielenkiintoinen ja sitä tehdessä oppi paljon erilaisten ihmisten suhtautumisesta,
+                odotuksista sekä näkökulmista samaan aiheeseen. Tutkimuksen avulla sain uusia näkökulmia mitä käyttäjät
+                odottavat sovellukselta sekä minkälaisia ominaisuuksia siihen tulisi sisällyttää.
+                Tutkimus auttoi myös havaitsemaan mitkä olisivat sovelluksen tärkeimmät ominaisuudet.
+
+            </p>
+        </div>
+    </div>
+
+    <div id="mobileMenu" class="mobileDown">
+        <div class="overlay-content">
+            <div class="inner">
+                <a href="\index.html"><i id="home" class="fa fa-fw fa-home"></i><br> Etusivu</a>
+            </div>
+            <div class="inner">
+                <a href="\tausta.html"><i id="user" class="fa fa-user"></i><br> Tausta</a>
+            </div>
+
+            <div class="inner mobile-dropup">
+                <a href="#" class="active"><i id="desktop" class="fa fa-desktop"></i><br> Projektit</a>
+                <div class="mobile-dropup-content">
+                    <a href="\uxdesign.html">UX Design</a>
+                    <a href="\koodaus.html">Ohjelmointi</a>
+                </div>
+
+            </div>
+
+            <div class="inner">
+                <a href="\otayhteytta.html"><i id="envelope" class="fa fa-fw fa-envelope"></i><br> Ota
+                    Yhteyttä</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript file: -->
+    <script src="\port_js\ux_enlarge_images.js"></script>
+</body>
+
+</html>
