@@ -61,18 +61,67 @@
 
             <h3>MatikkaPeli</h3>
             <p>
-                Sisalto
+                Peli sai alkunsa kouluprojektista, jossa oli yhtenä vaihtoehtona tehdä lasten matikkapeli. Idea
+                kuulosti hyvältä ja aloitin tekemään peliä. Projektissa peli tehtiin alun perin Tkinter frameworkillä,
+                mutta koska lapseni tykkäsi pelata peliä tietokoneella ja Tkinter toimii vain Windows-järjestelmässä
+                niin ajattelin, että hänen olisi mukavampi pelata peliä omalla puhelimellaan paikasta riippumatta. Tämän
+                takia vaihdoin Frameworkin KivyMd:hen.
             </p>
-            <p><Strong>Alaotsikko</Strong></p>
+            <img src="matikkaKuvat/Etusivu.JPG" alt="MatikkaPeli" id="Matik" class="MobiScrImg">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+            <p>
+                Aloitus sivu (Kuva suurenee klikkaamalla)
+            </p>
+            <p>
+                Aluksi pelissä oli vain plus ja miinus laskut rajoitettuna riippuen lapseni opiskelun etenemisestä.
+                Esimerkiksi maksimiluku oli 20 ja negatiiviset tulokset eivät olleet mukana.
+            </p>
+            <p>
+                Myöhemmin peliin lisättiin myös kertolaskut ja niitä rajoitettiin sen perusteella mitä kertotauluja
+                lapseni sillä hetkellä opiskeli. Pelissä on myös äänet, jotka kuuluvat, kun vastaus on oikein tai
+                väärin. Äänet saa etusivulta päälle tai pois. Myöhemmässä kehityksessä on tarkoitus antaa pelin
+                pelaajalle mahdollisuus valita mieleisensä laskut ja laskualueet.
+            </p>
+            <p>
+                Kun pelissä klikkaa Tarkista -painiketta, tarkastaa peli vastauksen sekä esittää uuden laskutehtävän.
+            </p>
+            <img src="matikkaKuvat/Yhteen.JPG" alt="YhteenLasku" id="MatikYhteen" class="MobiScrImg">
+            <p>
+                Peli on jo tässä kohdassa esittänyt uuden laskutehtävän. (Kuva suurenee klikkaamalla)
+            </p>
+            <p>
+                Vastauksen ollessa väärin tarkistuskenttä muuttuu punaiseksi ja kertoo oikean vastauksen.
+            </p>
+            <img src="matikkaKuvat/Vaarin.JPG" alt="YhteenLasku" id="MatikVaarin" class="MobiScrImg">
+            <p>
+                Väärin meni! (Kuva suurenee klikkaamalla)
+            </p>
+            <img src="matikkaKuvat/Kerto.JPG" alt="MatikkaPeli" id="MatikKerto" class="MobiScrImg">
+            <p>
+                Kertolasku (Kuva suurenee klikkaamalla)
+            </p>
+            <p>
+                Pelin kehittäminen oli mielenkiintoinen projekti. Ennen varsinaista koodaamista sekä koodatessa piti
+                miettiä pelin logiikkaa ja toiminnallisuuksien toteutusta. Myös pelin frameworkin valinnan takia tuli
+                myös opeteltua Kv -kieltä, jolla rakennetaan graafinen käyttöliittymä Kivy Frameworkissä. Kieli on nopea
+                ja helppo omaksua, jos esimerkiksi HTML on ennestään tuttua näiden kielten samankaltaisuuden vuoksi.
+            </p>
+            <h3>Mitä tulevaisuudessa? Jatko kehitys</h3>
 
+            <ul>
+                <li>Pelaaja voi itse valita laskutehtävät sekä valita rajauksen</li>
+                <li>Asetukset valikko/sivu </li>
+                <li>Käytettävyyden parantelu</li>
+            </ul>
             <p>
-                Sisältö
-            </p>
-            <p>
-                Sisältö
-            </p>
-            <p>
-                Sisältö
+                Linkki lähdekoodiin:<br>
+                <a href="#" target="_blank">Linkki lähdekoodiin
+                    Githubissa</a>
             </p>
         </div>
     </div>
@@ -103,7 +152,7 @@
     </div>
 
     <!-- JavaScript file: -->
-    <script src="\script.js"></script>
+    <script src="\port_js\matik_enlarge_images.js"></script>
 </body>
 
 </html>

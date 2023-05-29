@@ -236,7 +236,13 @@ a {
     .mobile-dropup:hover .dropbtn {
       background-color: #2980B9;
     }
-    
+    /* Project Images When Mobile Screen Shot */
+    .MobiScrImg {
+      max-width: 50%;
+      height: auto;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
   }
   /* Mobile Icon Size */
 #home {
@@ -269,7 +275,17 @@ a {
   .projectPageTitle {
     margin-left: 15%;
   }
-  
+  /* Project Images When Mobile Screen Shot */
+  .MobiScrImg {
+    max-width: 40%;
+    height: auto;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .MobiScrImg:hover {
+    opacity: 0.7;
+  }
 }
 
 
@@ -300,9 +316,10 @@ a {
 .gradie {
   height: auto;
   background-color: rgb(41, 41, 41);
+  
   /* For browsers that do not support gradients */
   background-image: linear-gradient(0deg, rgba(1, 6, 8, 0.8), rgb(9, 58, 87));}
-
+  
 /* Linkedin */
 #linkedin {
   color:#f1f1f1;
@@ -338,9 +355,9 @@ ol {
   display: table;
   clear: both;
 }
-
+/* Project Images */
 .project_img {
-  max-width: 50%;
+  max-width: 70%;
   height: auto;
   border-radius: 4px;
   cursor: pointer;
@@ -349,6 +366,8 @@ ol {
 .project_img:hover {
   opacity: 0.7;
 }
+
+
 /* Click to enlarge the image */
 
 /* The Modal (background) */
