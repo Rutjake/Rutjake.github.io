@@ -440,3 +440,8 @@ ol {
     width: 100%;
   }
 }
+/* Center Copyright text */
+.copyR {
+  text-align: center;
+  font-size:0.8em;
+}
