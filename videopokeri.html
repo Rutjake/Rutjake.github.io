@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS file: -->
+    <link rel="stylesheet" href="\styles.css">
+    <!-- Import Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="topMenu" class="topNav">
+        <div class="overlay-content">
+
+            <div class="inner2">
+                <a href="\index.html"><i class="fa fa-fw fa-home"></i> Etusivu</a>
+            </div>
+
+            <div class="inner2">
+                <a href="\tausta.html"><i class="fa fa-user"></i> Tausta</a>
+            </div>
+
+            <div class="inner2 dropdown">
+                <a href="javascript:void(0)" class="dropbtn active"><i class="fa fa-desktop"></i> Projektit</a>
+                <div class="dropdown-content">
+                    <a href="\uxdesign.html">UX Design</a>
+                    <a href="\koodaus.html">Ohjelmointi</a>
+                </div>
+            </div>
+
+            <div class="inner2">
+                <a href="\otayhteytta.html"><i class="fa fa-fw fa-envelope"></i> Ota Yhteyttä</a>
+            </div>
+            <a href="https://linkedin.com/in/jarno-seppanen" target="_blank">Linked <i id="linkedin"
+                    class="fa-brands fa-linkedin"></i></a>
+
+        </div>
+    </div>
+
+    <div class="mobileUp">
+        <a href="https://linkedin.com/in/jarno-seppanen" class="mobileLinkedin" target="_blank">Linked <i id="linkedin"
+                class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div>
+        <div>
+            <h1 class="title">JARNO</h1>
+            <h3 class="underText">UX Designer & Developer</h3>
+        </div>
+
+
+
+        <div id="mainPara" class="mainText center">
+
+            <h3>JaggePokka</h3>
+
+            <p>
+                Idea tähän projektiin tuli, kun halusin harjoitella Pythonia enemmän kuin mitä kurssiprojekteissa on tullut tehtyä. Lähdin toteuttamaan projektia ihan nollasta miettimällä, miten peli voisi toimia ja miten se kannattaisi toteuttaa. Mielessä oli, että Pokeri pelistä tulisi tulevaisuudessa fyysinen laite, jossa on näyttö sekä fyysiset painikkeet. Ehkä jopa kosketusnäyttö, tämän takia frameworkiksi valikoitui KivyMd. 
+            </p>
+            <img src="pokeriKuvat/poker_main.jpg" alt="Pääruutu" id="Paaruutu" class="MobiScrImg">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+            <p>
+                Pääruutu (Kuva suurenee klikkaamalla)
+            </p>
+            <p>
+                Ensimmäinen haaste oli pakan toteutus sekä se, miten se valitsee pakasta kortit. 
+                Tähän käytin listaa mihin luotiin 52 korttia ja Pythonin random -funktio hakee sieltä viisi korttia. 
+                Haetut kortit poistetaan pakasta, koska pakka ”sekoitettaan” ainoastaan pelin alussa.  Pelissä on käytetty animaatioita luomaan mielikuva pakan sekoittamisesta sekä korttien jakamisesta.
+            </p>
+            <img src="pokeriKuvat/valittu.jpg" alt="Kortit valittu" id="valittu" class="MobiScrImg">
+           
+            <p>
+                Myös korttien kiinnitys on animoitu, jotta se olisi pelaajalle visuaalisempi kokemus. 
+                <br>(Kuva suurenee klikkaamalla)
+            </p>
+            <img src="pokeriKuvat/TuplausVoitit.jpg" alt="Tuplaus" id="tuplaus" class="MobiScrImg">
+            <p>
+                Tuplaus ominaisuus toimii lähes samalla periaatteella, mutta se hakee vain yhden kortin ja vertailee vain kortin numeroita. 
+                <br>(Kuva suurenee klikkaamalla)
+            </p>
+            <p>
+                JaggePokka oli projektina todella mielenkiintoinen ja sitä tehdessä oppi paljon koodauksesta. Pelin toteuttaminen oli hauska kokemus sekä sitä tehdessä joutui ratkomaan erinäisiä ongelmia.
+                Vaikka pelin toiminnallisuudet ovatkin valmiit, on projektissa vielä paljon tehtävää.
+            </p>
+            <p><Strong>Mitä tulevaisuudessa? Jatko kehitys</Strong></p>
+            <ul>
+                <li>Grafiikkojen parantelu</li>
+                <li>Äänet</li>
+                <li>Rahojen tallennus</li>
+            </ul>
+            <p>
+                Linkki lähdekoodiin:<br>
+                <a href="#" target="_blank">Lähdekoodi Githubissa</a>
+            </p>
+            <p><a href="koodaus.html"><i class="fa-regular fa-circle-left"></i><Strong> Takaisin</Strong></p></a>
+        </div>
+    </div>
+
+    <div id="mobileMenu" class="mobileDown">
+        <div class="overlay-content">
+            <div class="inner">
+                <a href="\index.html"><i id="home" class="fa fa-fw fa-home"></i><br> Etusivu</a>
+            </div>
+            <div class="inner">
+                <a href="\tausta.html"><i id="user" class="fa fa-user"></i><br> Tausta</a>
+            </div>
+
+            <div class="inner mobile-dropup">
+                <a href="#" class="active"><i id="desktop" class="fa fa-desktop"></i><br> Projektit</a>
+                <div class="mobile-dropup-content">
+                    <a href="\uxdesign.html">UX Design</a>
+                    <a href="\koodaus.html">Ohjelmointi</a>
+                </div>
+
+            </div>
+
+            <div class="inner">
+                <a href="\otayhteytta.html"><i id="envelope" class="fa fa-fw fa-envelope"></i><br> Ota
+                    Yhteyttä</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript file: -->
+    <script src="port_js\poker_enlarge_images.js"></script>
+</body>
+
+</html>
