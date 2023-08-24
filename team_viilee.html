@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS file: -->
+    <link rel="stylesheet" href="\styles.css">
+    <!-- Import Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="topMenu" class="topNav">
+        <div class="overlay-content">
+
+            <div class="inner2">
+                <a href="index.html"><i class="fa fa-fw fa-home"></i> Etusivu</a>
+            </div>
+
+            <div class="inner2">
+                <a href="tausta.html"><i class="fa fa-user"></i> Tausta</a>
+            </div>
+
+            <div class="inner2 dropdown">
+                <a href="javascript:void(0)" class="dropbtn active"><i class="fa fa-desktop"></i> Projektit</a>
+                <div class="dropdown-content">
+                    <a href="uxdesign.html">UX Design</a>
+                    <a href="koodaus.html">Ohjelmointi</a>
+                </div>
+            </div>
+
+            <div class="inner2">
+                <a href="otayhteytta.html"><i class="fa fa-fw fa-envelope"></i> Ota Yhteyttä</a>
+            </div>
+            <a href="https://linkedin.com/in/jarno-seppanen" target="_blank">Linked <i id="linkedin"
+                    class="fa-brands fa-linkedin"></i></a>
+
+        </div>
+    </div>
+
+    <div class="mobileUp">
+        <a href="https://linkedin.com/in/jarno-seppanen" class="mobileLinkedin" target="_blank">Linked <i id="linkedin"
+                class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div>
+        <div>
+            <h1 class="title">JARNO</h1>
+            <h3 class="underText">UX Designer & Developer</h3>
+        </div>
+
+
+
+        <div id="mainPara" class="mainText center">
+
+            <h3>Team Viilee App</h3>
+            
+
+            <p>
+                Tavoitteena oli toteuttaa toiminnallinen prototyyppi yhteistyössä Team Viilee yleisurheilu
+                harjoitusryhmän kanssa.<br>
+                Sovelluksella pystyy hallinnoimaan harjoitusryhmän urheilijoiden harjoitusohjelmia sekä pitämään
+                harjoituspäiväkirjaa.
+                Projektin idea syntyi keskustelussa Team Viileen valmentajan kanssa.
+                Sovellusta määritellessä korostui, että siitä tulisi tehdä mahdollisimman yksinkertainen ja helppo
+                käyttää,
+                jotta sen käyttö ei ennen harjoitusta tai sen jälkeen vie liikaa aikaa.
+            </p>
+            <p>
+                Yhteistyökumppanin kanssa ohjelmaa määritellessä tuli myös ilmi, että nykyiset kaupalliset sovellukset
+                sisältävät liikaa "sälää", joka vaikeuttaa ja hidastaa operoimista.
+                Suunnittelun aikana pidettii katselmuksia yhteistyökumppanin kanssa, jolloin pystyttiin kartoittamaan
+                onko sovelluksen määritelmät ymmärretty oikein.
+                Sovellusta suunnitellessa seurattiin Material Design suosituksia.
+            </p>
+            <img src="teamViileeKuvat/teamViileeLogIn.JPG" alt="Sisäänkirjautuminen" id="sign_in" class="MobiScrImg">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+            <p>
+                Sisäänkirjautuminen (Kuva suurenee klikkaamalla)
+            </p>
+            <p>
+                Sovelluksen kirjautuminen on tärkeä ominaisuus, jotta
+                voidaan osoittaa käyttäjälle oikea tietokanta sekä ohjata käyttäjä joko urheilija tai valmentaja
+                näkymään.
+                Myös tunnuksen luominen onnistuu ennen sisäänkirjautumista,
+                jolloin uuden urheilijan on helppo aloittaa sovelluksen käyttö.
+            </p>
+            <img src="teamViileeKuvat/urheilijan_nakyma.JPG" alt="Urheilijan näkymä" id="urheilija_n"
+                class="MobiScrImg">
+            <p>
+                Urheilijan näkymä (Kuva suurenee klikkaamalla)
+            </p>
+            <p>
+                Urheilijan näkymä on hyvin yksinkertainen. Näkymässä pääsee vaihtamaan salasanan (rataskuvake
+                yläkulmassa)
+                sekä tarkastelemaan harjoitusohjelmaa. Halutessaan urheilija voi kirjautua ulos sovelluksesta.
+            </p>
+
+            <img src="teamViileeKuvat/valmentajan_nakyma.JPG" alt="Valmentajan näkymä" id="valmentaja_n"
+                class="MobiScrImg">
+            <p>
+                Valmentajan näkymä (Kuva suurenee klikkaamalla)
+            </p>
+            <p>
+                Valmentajan näkymä on lähes samanlainen kuin urheilijan,
+                mutta valmentaja tarvitsee muutaman ominaisuuden enemmän.<br>
+                Valmentaja voi luoda urheilijalle joko uuden tai muokata olemassa olevaa harjoitusohjelmaa.
+                Kun valmentaja haluaa tehdä uuden harjoitusohjelman, niin hän valitsee alasvetovalikosta urheilijan
+                jolle kyseinen harjoitusohjelma tehdään. Samoin menetellään myös kun halutaan tarkastella olemassa
+                olevaa ohjelmaa.
+
+            </p>
+            <img src="teamViileeKuvat/urheilijan_ohjelma.JPG" alt="Urheilijan harjoitusohjelma" id="urheilija_o"
+                class="MobiScrImg">
+            <p>
+                Urheilijan harjoitusohjelma (Kuva suurenee klikkaamalla)
+            </p>
+            <p>
+                Urheilijan harjoitusohjelma tulostuu taulukkona, jolloin se on hyvin selkeä ja helppo tulkita.
+                Urheilija voi lisätä kuvauksen kullekkin päivälle "Tehty" sarakkeeseen, jolloin valmentajan,
+                kuin myös urheilijan on helppo seurata ohjelmaa.
+            </p>
+            <img src="teamViileeKuvat/alert_ikkuna.JPG" alt="Harjoituksen kuvaus" id="alert_w" class="MobiScrImg">
+            <p>
+                Harjoituksen kuvaus (Kuva suurenee klikkaamalla)
+            </p>
+            <p>
+                Jos harjoituksen kuvaus ei mahdu kokonaisena taulukko näkymään, voi urheilija klikata sitä,
+                jolloin aukeaa uusi ikkuna josta urheilija näkee harjoituksen kuvauksen kokonaisuudessaan.
+                Myös valmentaja pystyy avata urheilijan kommentit uuteen ikkunaan.
+            </p>
+            <img src="teamViileeKuvat/uusi_ohjelma.JPG" alt="Luo uusi ohjelma" id="make_new" class="MobiScrImg">
+            <p>
+                Uuden harjoitusohjelman luominen (Kuva suurenee klikkaamalla)
+            </p>
+            <p>
+                Valmentaja voi luoda uuden harjoitusohjelman lisäämällä ensin päivämäärät, sen jälkeen klikkaamalla
+                päivämäärää
+                pääsee valmentaja lisäämään harjoituksen kuvauksen taulukkoon.
+            </p>
+            <img src="teamViileeKuvat/harjoituksen_kuvaus.JPG" alt="Harjoituksen kuvaus" id="program_d"
+                class="MobiScrImg">
+            <p>
+                Harjoituksen kuvauksen lisääminen (Kuva suurenee klikkaamalla)
+            </p>
+
+            <p>
+                Projekti oli erittäin mielenkiintoinen ja sitä tehdessä oppi paljon uusia asioita UX-Designistä.
+                Vaikka Figma oli minulle tuttu koulun kursseilta sekä opinäytetyöstäni, oli sen käyttäminen projektin toteutuksessa hauskaa 
+                ja samalla siitä oppi paljon uusia ominaisuuksia.
+                Yhteistyökumppani oli tyytyväinen projektin loppu tulokseen, jolloin projektia voidaan pitää onnistuneena.
+            </p>
+            <img src="teamViileeKuvat/Figma_nakyma.JPG" alt="Figma näkymä prototyypistä" id="figma_v"
+                class="project_img">
+            <p>
+                Figma näkymä prototyypistä (Kuva suurenee klikkaamalla)
+            </p>
+
+            <p><a href="uxdesign.html"><i class="fa-regular fa-circle-left"></i><Strong> Takaisin</Strong></p></a>
+        </div>
+    </div>
+
+    <div id="mobileMenu" class="mobileDown">
+        <div class="overlay-content">
+            <div class="inner">
+                <a href="index.html"><i id="home" class="fa fa-fw fa-home"></i><br> Etusivu</a>
+            </div>
+            <div class="inner">
+                <a href="tausta.html"><i id="user" class="fa fa-user"></i><br> Tausta</a>
+            </div>
+
+            <div class="inner mobile-dropup">
+                <a href="#" class="active"><i id="desktop" class="fa fa-desktop"></i><br> Projektit</a>
+                <div class="mobile-dropup-content">
+                    <a href="uxdesign.html">UX Design</a>
+                    <a href="koodaus.html">Ohjelmointi</a>
+                </div>
+
+            </div>
+
+            <div class="inner">
+                <a href="otayhteytta.html"><i id="envelope" class="fa fa-fw fa-envelope"></i><br> Ota
+                    Yhteyttä</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript file: -->
+    <script src="port_js\viilee_enlarge_images.js"></script>
+</body>
+
+</html>
