@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS file: -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Import Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="topMenu" class="topNav">
+        <div class="overlay-content">
+
+            <div class="inner2">
+                <a href="index.html"><i class="fa fa-fw fa-home"></i> Etusivu</a>
+            </div>
+
+            <div class="inner2">
+                <a href="tausta.html"><i class="fa fa-user"></i> Tausta</a>
+            </div>
+
+            <div class="inner2 dropdown">
+                <a href="javascript:void(0)" class="dropbtn active"><i class="fa fa-desktop"></i> Projektit</a>
+                <div class="dropdown-content">
+                    <a href="uxdesign.html">UX Design</a>
+                    <a href="koodaus.html">Ohjelmointi</a>
+                </div>
+            </div>
+
+            <div class="inner2">
+                <a href="otayhteytta.html"><i class="fa fa-fw fa-envelope"></i> Ota Yhteyttä</a>
+            </div>
+            <a href="https://linkedin.com/in/jarno-seppanen" target="_blank">Linked <i id="linkedin"
+                    class="fa-brands fa-linkedin"></i></a>
+
+        </div>
+    </div>
+
+    <div class="mobileUp">
+        <a href="https://linkedin.com/in/jarno-seppanen" class="mobileLinkedin" target="_blank">Linked <i id="linkedin"
+                class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div>
+        <div>
+            <h1 class="title">JARNO</h1>
+            <h3 class="underText">UX Designer & Developer</h3>
+        </div>
+
+
+
+        <div id="mainPara" class="mainText center">
+
+            <h3>Sää Nyt</h3>
+            <p>
+                React.js fundamentals -kurssin suoritettuani jatkoin Reactin opiskelua itsenäisesti ja päätin toteuttaa pienen sovelluksen.
+                Tarkoitus oli harjoitella React.js:ää sekä tiedon hakua API rajapinnasta. Rajapinnaksi valikoitui OpenWeather,  
+                koska se on yleisesti käytetty ja juolahti mieleeni esimmäisenä. OpenWeather tarjoaa tietoa JSON ja XML muodossa.
+                Tässä soveluksessa käytetään JSON muotoista dataa. Aiemmissa koulun Javascript projekteissa olen käyttänyt myös XML muotoa tiedon hakuun.
+            </p>
+            <img src="saaKuvat/saaEtusivu.JPG" alt="Mobiili Etusivu" id="saaEtu" class="project_img">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+            <p>
+                Mobiiliversion etusivu (Kuva suurenee klikkaamalla)
+            </p>
+            <p>
+                Sovellukseen haettavat säätiedot valikoituivat sen perusteella, mitkä minusta ovat mielenkiintoisia ja relevantteja.<br>
+                Sovellus kertoo haetun kaupungin tai kunnan nimen ja päivämäärän ennen haettuja säätietoja.<br>
+                Haettavat säätiedot ovat keli, lämpötila (myös miltä lämpötila tuntuu), kosteus prosentti ja tuulen nopeus.
+            </p>
+            <img src="saaKuvat/saaHel.JPG" alt="Säätiedot Mobiili" id="tiedotMobi" class="MobiScrImg">
+            <p>
+                Säätiedot mobiili näkymässä (Kuva suurenee klikkaamalla)
+            </p>
+            <p>
+                Webversio sovelluksesta on lähes samanlainen kuin mobiiliversio:
+            </p>
+            <img src="saaKuvat/saaHel_Desktop.JPG" alt="Säätiedot Webversio" id="tiedotWeb" class="project_img">
+            <p>
+                Säätiedot web näkymässä (Kuva suurenee klikkaamalla)
+            </p>
+            <p>
+                Sovelluksessa on dynaaminen taustakuva, joka vaihtuu kun sää on lämpimämpi kuin 12 astetta (kuvat ylempänä). 
+                Muuten sovellus käyttää taustakuvaa, joka havainnoillistaa kylmää ilmaa. 
+            </p>
+            <img src="saaKuvat/saaRov.JPG" alt="Dynaaminen taustakuva" id="taustaRov" class="MobiScrImg">
+            <p>
+                Taustakuva viileällä ilmalla (Kuva suurenee klikkaamalla)
+            </p>
+            <p>
+                Projekti oli hyvää harjoitusta sekä taidon ylläpitoa. Vaikka sovellus on yksinkertainen, se oli mielenkiintoinen toteuttaa.
+                Varsinaisen React sovelluksen kirjoittamisen lisäksi tutustuin syvemmin OpenWeatherin toimintaan ja dokumentaatioon.
+            </p>
+            
+            <p>
+                Sovellusta voit kokeilla täällä:<br>
+                <a href="https://rutjake.github.io/weather_app_build/" target="_blank">Sää Nyt</a>
+            </p>
+            <p>
+                Linkki lähdekoodiin:<br>
+                <a href="https://github.com/Rutjake/weather_app" target="_blank">Lähdekoodi GitHubissa</a>
+            </p>
+        
+            <p><a href="koodaus.html"><i class="fa-regular fa-circle-left"></i><Strong> Takaisin</Strong></p></a>
+        </div>
+    </div>
+
+    <div id="mobileMenu" class="mobileDown">
+        <div class="overlay-content">
+            <div class="inner">
+                <a href="index.html"><i id="home" class="fa fa-fw fa-home"></i><br> Etusivu</a>
+            </div>
+            <div class="inner">
+                <a href="tausta.html"><i id="user" class="fa fa-user"></i><br> Tausta</a>
+            </div>
+
+            <div class="inner mobile-dropup">
+                <a href="#" class="active"><i id="desktop" class="fa fa-desktop"></i><br> Projektit</a>
+                <div class="mobile-dropup-content">
+                    <a href="uxdesign.html">UX Design</a>
+                    <a href="koodaus.html">Ohjelmointi</a>
+                </div>
+
+            </div>
+
+            <div class="inner">
+                <a href="otayhteytta.html"><i id="envelope" class="fa fa-fw fa-envelope"></i><br> Ota
+                    Yhteyttä</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript file: -->
+    <script src="port_js\saa_enlarge_images.js"></script>
+</body>
+
+</html>
